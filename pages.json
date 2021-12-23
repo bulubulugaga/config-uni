@@ -1,0 +1,98 @@
+{
+	"pages": [ 
+		{
+			"path": "pages/tabbar/home/home",
+			"style": {
+				"navigationBarTitleText": "首页"
+			},
+			"name": "home"
+		},
+		{
+			"path": "pages/tabbar/checkList/checkList",
+			"style": {
+				"navigationBarTitleText": "检查表"
+			},
+			"name": "checkList"
+		},
+		{
+			"path": "pages/tabbar/personal/personal",
+			"style": {
+				"navigationBarTitleText": "个人中心"
+			},
+			"name": "personal"
+		}
+	],
+	"subPackages": [  //分包处理
+		{
+			"root": "pages/home",
+			"pages": [
+				
+			]
+		}, {
+			"root": "pages/checkList",
+			"pages": [
+				
+			]
+		}, {
+			"root": "pages/personal",
+			"pages": [
+				
+			]
+		}, {
+			"root": "pages/public",
+			"pages": [{
+				"path": "404",
+				"name": "404",
+				"style": {
+					"navigationBarTitleText": "页面不存在",
+					"usingComponents": {
+					  "van-empty": "/wxcomponents/vant/dist/empty/index"
+					}
+				}
+			}, {
+				"path": "login",
+				"style": {
+					"navigationBarTitleText": "登录"
+					// "navigationStyle": "custom"
+				},
+				"name": "login"
+			}]
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8",
+		"usingComponents": {
+		  "van-cell": "/wxcomponents/vant/dist/cell/index",
+		  "van-cell-group": "/wxcomponents/vant/dist/cell-group/index",
+		  "van-button": "/wxcomponents/vant/dist/button/index"
+		}
+	},
+	"tabBar": {
+		"color": "#333",
+		"selectedColor": "#a8700d",
+		"backgroundColor": "#ffffff",
+		"borderStyle": "black",
+		"list": [{
+				"pagePath": "pages/tabbar/home/home",
+				"text": "首页",
+				"iconPath": "static/images/tabbar/tabbar_home.png",
+				"selectedIconPath": "/static/images/tabbar/tabbar_home1.png"
+			},
+			{
+				"pagePath": "pages/tabbar/checkList/checkList",
+				"text": "检查表",
+				"iconPath": "static/images/tabbar/tabbar_checkList.png",
+				"selectedIconPath": "/static/images/tabbar/tabbar_checkList1.png"
+			},
+			{
+				"pagePath": "pages/tabbar/personal/personal",
+				"text": "个人中心",
+				"iconPath": "static/images/tabbar/tabbar_personal.png",
+				"selectedIconPath": "/static/images/tabbar/tabbar_personal1.png"
+			}
+		]
+	}
+}
