@@ -10,11 +10,11 @@
 
 # 部分文件结构说明
 
-> 1. common -- 功能文件   
-> 	request -- 网络请求
-> 	router -- 路由配置
-> 	store -- 仓库管理
-> 	utils -- 静态工具文件
-> 	wechat -- 微信方法封装
-> 2. wxcomponents -- vantweapp ui 组件
-> 3. env.js -- 全局配置文件
+1. common -- 功能文件      
+  request -- 网络请求    
+  router -- 路由配置    
+  store -- 仓库管理    
+  utils -- 静态工具文件      
+  wechat -- 微信方法封装   
+2. wxcomponents -- vantweapp ui 组件   
+3. env.js -- 全局配置文件   
